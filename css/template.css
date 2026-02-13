@@ -1,0 +1,174 @@
+body {
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1520px;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  z-index: 99999;
+}
+
+.header .head-main {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header .head-main .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.header .head-main .left .logo {
+  margin-top: 7px;
+}
+
+.header .head-main .left .menu-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .head-main .left .menu-main .navbar-nav {
+  gap: 10px;
+}
+
+.header .head-main .left .menu-main .nav-link {
+  color: black;
+  font-size: 22px;
+  font-weight: 501;
+  transition: all 0.01s;
+  opacity: 0.5;
+}
+
+.header .head-main .left .menu-main .nav-link > img {
+  transition: transform 0.3s ease;
+}
+
+.header .head-main .left .menu-main .nav-link[aria-expanded="true"] > img {
+  transform: rotate(180deg);
+}
+
+.header .head-main .left .menu-main .nav-link:focus {
+  opacity: 1;
+}
+
+.header .head-main .left .menu-main .nav-link::after {
+  display: none;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.header .head-main .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.header .head-main .right > a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  transition: all 0.3s;
+  border-radius: 20px;
+}
+
+.header .head-main .right > a:hover {
+  border: 1px solid black;
+}
+
+.main {
+  margin-bottom: 100px;
+}
+
+.main .content {
+  margin-top: 130px;
+}
+
+.main .content .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.main .content .desc > h2 {
+  margin: 0;
+  font-size: 124px;
+  font-weight: 501;
+}
+
+.main .content .desc > p {
+  font-size: 20px;
+  font-weight: 501;
+  opacity: 0.6;
+}
+
+.main .content .more {
+  border-radius: 20px;
+  padding: 15px 30px 15px 30px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 401;
+  transition: all 0.3s;
+}
+
+.main .content .more:hover {
+  background-color: white;
+  color: black;
+}
+
+.main .content .list {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.main .image {
+  margin-top: 50px;
+  padding-left: 155px;
+}
+
+.main .image .desktop {
+  width: 100%;
+  height: 635px;
+}
+
+.main .image .mobile {
+  display: none;
+}

@@ -1,0 +1,41 @@
+.container {
+  padding: 0 40px !important;
+}
+
+.main .container .row {
+  flex-direction: column-reverse;
+}
+
+.main .image .desktop {
+  display: none !important;
+}
+
+.main .image .mobile {
+  display: flex !important;
+  width: 640px;
+  position: relative;
+  left: -43%;
+}
+
+.main .content .desc {
+  gap: 30px !important;
+}
+
+.main .content .desc > h2 {
+  font-size: 64px !important;
+}
+
+.main .content .desc > p {
+  font-size: 22px !important;
+  text-align: center;
+}
+
+.main .content .more {
+  position: relative;
+  left: 33%;
+}
+
+.main .content .more:hover {
+  background-color: black;
+  color: white;
+}
